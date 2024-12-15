@@ -1,3 +1,4 @@
 # community advent of code 2024
 
-![image](https://github.com/user-attachments/assets/3226f7be-1a0f-4a72-9bda-3b0b73459bbc)
+![image](https://github.com/user-attachments/assets/2e8017f7-383b-4acb-86f1-2237f0a61fae)
+
