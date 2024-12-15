@@ -29,7 +29,7 @@ gewichtung = np.array([-1, 1])
 # Horizontale sprunggröße zwischen allen elementen der matrix berechnen
 # Faltung (convolution) jeder Zeile von unique_rise_fall_data mit dem Vektor [-1, 1], bestimmt sprunggröße zwischen 
 # benachbarten elementen
-# bsp. x = convolve1d([2, 1, 3], [-1, 1], mode="wrap") -> x = [(-2+1), (-2+3), (-3+2)] = [-1, 2, -1]
+# bsp. x = convolve1d([2, 1, 3], [1, -1], mode="wrap") -> x = [(-2+1), (-2+3), (-3+2)] = [-1, 2, -1]
 jump_data = [sp.convolve1d(row, gewichtung, mode="wrap") for row in unique_rise_fall_data]
 # Es intressiert nur die sprunggröße, nicht die Richtung, daher wird der Betrag genommen
 # Die letzte Spalte wird entfernt, da sie nur die Sprunggröße zwischen dem letzten und ersten Element der Zeile enthält
