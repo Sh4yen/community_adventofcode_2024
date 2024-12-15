@@ -1,0 +1,8 @@
+import numpy as np
+
+descending_data =  np.array([[1,2,3],[4,5,6]])
+ascending_data = np.array([[7,8,9],[10,11,12]])
+
+combined_data = np.concatenate((descending_data, ascending_data), axis=0)
+
+print(combined_data)
